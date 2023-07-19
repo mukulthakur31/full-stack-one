@@ -1,0 +1,27 @@
+.container{
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    position: relative;
+    left: 30rem;
+    top: 10rem;
+    
+}
+input{
+    margin: 5px;
+}
+button{
+   margin: 5px;
+   background-color:white;
+   border-radius: 6px;
+   border: 1px solid transparent;
+   color: black;
+}
+h3{
+    margin:4px;
+}
