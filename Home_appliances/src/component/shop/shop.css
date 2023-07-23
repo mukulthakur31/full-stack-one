@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,300&family=Exo+2:ital,wght@1,500&family=Lato:ital,wght@0,700;1,400&family=Lora:ital@1&family=Oswald&family=Roboto+Mono&family=Roboto+Slab:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    height: 100%;
+    margin: 4rem;
+    /* border: 1px solid black; */
+    position: relative;
+  
+    
+}
+
+/* yha  pr ye  background iske parent ki respect me set hota ha to hme ise lgan ke lie position deni pdti ha to is class ka parent tha sectionto hme us section ki position deni hogi agr hm position nhi denge to  by default uska parent to body ha to jb hm shop-container ko back. denge to wo uske parent ke e=respect me lgega or uska parent section ha or hmne section ko position nhi di higi to wo bhi by default body ke rspect me move krega to wo back. body ke respect me lgega to islie hm section ko position relative denge taki wo apne hi respect me move kre or uske baad container ko  position absolute denge taki wo section ke repect me move kre  */
+/* .shop-container::before{
+    content: "";
+    background-color: rgb(97, 117, 117);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    z-index: -1;
+
+
+} */
+.products{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  
+    gap:3%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+
+}
+
+.product img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  box-shadow: 3px 3px 3px black;
+ border-top-left-radius: 2rem;
+}
+.product img:hover{
+    
+}
+.product img:hover {
+    box-shadow: 6px 6px 6px black;
+    /* transform: scale(1.1); */
+  }
+h5{
+    color: green;
+    font-size: 1rem;
+}
+
+.info{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+   
+    margin-top: 1rem;
+}
+.stars{
+    position: absolute;
+    right: 0px;
+}
+.shop-icon{
+    text-align: end;
+    margin-right: 1rem;
+} 
+
+.text{
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1{
+   font-size: 2rem;
+   text-shadow: 1px 1px .5px black;
+}
+
+@media screen and (max-width:1330px){
+    .product{
+        max-width: 35rem;
+        aspect-ratio: 1/1;
+        display: inline-block;
+        position: relative;
+        margin: 1rem;
+    }
+    .product img{
+        max-width:100%;
+        aspect-ratio:1/1;
+        border-top-left-radius:2rem ;
+        border: 2px solid transparent;
+    }
+    .text{
+        font-size: 2rem;
+    }
+    .text1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width : 1340px) {
+    .text1{
+      font-size: 1.5rem;
+     text-align: start;
+    }
+    
+}
+@media screen and (max-width : 990px) {
+    .products{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: 45% 45%;
+      
+        gap:5%;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+    
+    
+    }
+    
+    .product img{
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+    .product{
+       width: 100%;
+       aspect-ratio: 1/1;
+    
+    }
+    
+}

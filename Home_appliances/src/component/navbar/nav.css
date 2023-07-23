@@ -1,0 +1,47 @@
+.container{
+    height: fit-content;
+    position: relative;
+    background-color: rgb(27, 26, 26);
+    color: beige;
+}
+.top-headings{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-family: 'Bitter', serif;
+}
+.top-headings img{
+    height: 3rem;
+    margin-right: 1rem;
+}
+hr{
+    color: beige;
+}
+.nav-container{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    /* max-width: 1200px; */
+    color: beige;
+    justify-content: space-around;
+    /* margin: 0 auto; */
+    /* height: 3rem; */
+    align-items: center;
+
+}
+
+a{
+    font-family: 'Bitter', serif;
+}
+a:hover{
+    color: rgb(171, 185, 181);
+   
+}
+@media screen and (max-width: 890px) {
+   .nav-container .link{
+    display: none;
+   }
+   .nav-container .toggle_btn{
+    display: block;
+   }
+}
